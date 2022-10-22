@@ -8,7 +8,7 @@ from telethon.sync import TelegramClient
 
 
 def main():
-    print("T E A M    W A R B O T   ! !")
+    print("T E A M    T H A M O S  B O T  ! !")
     print("Hello!! Welcome to WaruserBot Session Generator\n")
     print("Human Verification Required !!")
     while True:
@@ -42,24 +42,24 @@ def generate_pyro_session():
         print("\nYour WaruserBot Session Is sent in your Telegram Saved Messages.")
         hellbot.send_message(
             "me",
-            f"#WarUserBOT_MUSIC #WARUSERBOT_SESSION #PYROGRAM\n\n`{hellbot.export_session_string()}`",
+            f"#ThamosUserBOT_MUSIC #THAMOSUSERBOT_SESSION #PYROGRAM\n\n`{hellbot.export_session_string()}`",
         )
 
 
 def generate_telethon_session():
-    print("\nTelethon Session For WarUserBot!")
+    print("\nTelethon Session For ThamosUserBot!")
     APP_ID = int(input("\nEnter APP ID here: "))
     API_HASH = input("\nEnter API HASH here: ")
     with TelegramClient(StringSession(), APP_ID, API_HASH) as hellbot:
-        print("\nYour WarUserBot Session Is sent in your Telegram Saved Messages.")
-        hellbot.send_message(
+        print("\nYour ThamosUserBot Session Is sent in your Telegram Saved Messages.")
+        THAMOSbot.send_message(
             "me",
-            f"#WARUSERBOT #WARBOT_SESSION #TELETHON \n\n`{hellbot.session.save()}`",
+            f"#THAMOS-USER-BOT #THAMOS_SESSION #TELETHON \n\n`{Thamosbot.session.save()}`",
         )
 
 
 def generate_insta_session():
-    print("Instagram Session For WARBot!")
+    print("Instagram Session For Thamosbot!")
     cl = IClient()
     username = input("Enter your Instagram Username: ")
     password = input("Enter your Instagram Password: ")
